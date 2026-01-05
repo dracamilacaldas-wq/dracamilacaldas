@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Pearl/Off-white background */
+    --background: 20 10% 98%;
+    --foreground: 215 25% 15%;
+    /* Deep Charcoal/Navy */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Deep Navy */
+    --primary: 215 25% 18%;
+    /* #212936 roughly */
+    --primary-foreground: 30 20% 98%;
+
+    /* Champagne/Gold Accent */
+    --secondary: 40 15% 90%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 10% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Soft Gold */
+    --accent: 35 35% 65%;
+    /* #B89C74 - Muted Gold */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 35 35% 65%;
+
+    --radius: 1.25rem;
+  }
+
+  .dark {
+    --background: 215 25% 10%;
+    --foreground: 30 20% 98%;
+    --card: 215 25% 12%;
+    --card-foreground: 30 20% 98%;
+    --popover: 215 25% 12%;
+    --popover-foreground: 30 20% 98%;
+    --primary: 35 35% 65%;
+    --primary-foreground: 215 25% 10%;
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 30 20% 98%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 10% 65%;
+    --accent: 215 25% 15%;
+    --accent-foreground: 30 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 30 20% 98%;
+    --border: 215 25% 15%;
+    --input: 215 25% 15%;
+    --ring: 35 35% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
