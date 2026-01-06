@@ -39,13 +39,11 @@ export const Treatments = () => {
     return (
         <section id="treatments" className="py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                    <div className="max-w-2xl">
-                        <span className="text-accent font-medium uppercase tracking-wider mb-2 block">Nossos Tratamentos</span>
-                        <h2 className="font-serif text-4xl md:text-5xl text-primary leading-tight">
-                            Cuidamos do seu sorriso <span className="italic block text-muted-foreground/60">com excelência e carinho.</span>
-                        </h2>
-                    </div>
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <span className="text-accent font-medium uppercase tracking-wider mb-4 block">Nossos Tratamentos</span>
+                    <h2 className="font-serif text-4xl md:text-5xl text-primary leading-tight text-balance">
+                        Cuidamos do seu sorriso <span className="italic block text-muted-foreground/60">com excelência e carinho.</span>
+                    </h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
