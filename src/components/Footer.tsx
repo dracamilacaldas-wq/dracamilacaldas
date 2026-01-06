@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Instagram, MapPin, Phone } from "lucide-react"
 import { motion } from "motion/react"
+import LumoLogo from "@/assets/logo-lumo.svg"
 
 export const Footer = () => {
     return (
@@ -139,9 +140,35 @@ export const Footer = () => {
                         </motion.a>
                     </div>
 
-                    <p className="text-white/40 text-sm font-sans">
-                        © {new Date().getFullYear()} Camila Caldas. Todos os direitos reservados.
-                    </p>
+                    <div className="flex flex-col items-center md:items-end gap-2">
+                        <p className="text-white/40 text-sm font-sans text-center md:text-right">
+                            © {new Date().getFullYear()} Camila Caldas. Todos os direitos reservados.
+                        </p>
+                        <a
+                            href="https://lumostudio.com.br"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity duration-300 text-xs text-white/40 font-sans"
+                        >
+                            <span>Feito com</span>
+                            <motion.svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="w-4 h-4 text-red-500"
+                                animate={{ scale: [1, 1.2, 1] }}
+                                transition={{
+                                    duration: 1.5,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
+                            >
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </motion.svg>
+                            <span>por</span>
+                            <img src={LumoLogo} alt="Lumo Studio" className="h-2.5 md:h-3 w-auto opacity-80" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
