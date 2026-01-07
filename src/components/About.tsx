@@ -5,7 +5,7 @@ export const About = () => {
     return (
         <section id="about" className="py-24 bg-stone-50 overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-8 items-center">
 
                     {/* Text Header + Paragraphs (Order 1 on mobile, 2 on desktop) */}
                     <motion.div
@@ -82,7 +82,7 @@ export const About = () => {
 
                     {/* Cards (Order 3 on mobile and desktop) */}
                     <div className="w-full order-3 md:order-3">
-                        <div className="mt-12 grid grid-cols-1 gap-4">
+                        <div className="mt-4 grid grid-cols-1 gap-4">
                             {[
                                 { icon: Award, text: "Especialista em Dentística Restauradora" },
                                 { icon: Star, text: "Pós-graduação em Reabilitação Oral" },
